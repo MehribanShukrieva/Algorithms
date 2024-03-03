@@ -43,6 +43,8 @@ void merge(int arr[], int l, int m, int r)
 	} 
 } 
 
+//Function to utilize Merge sort algorithm;
+//l for left, r for right
 void mergeSort(int arr[], int l, int r) 
 { 
 	if (l < r) { 
@@ -55,6 +57,7 @@ void mergeSort(int arr[], int l, int r)
 	} 
 } 
 
+//Function to print the array
 void printArray(int A[], int size) 
 { 
 	int i; 
@@ -63,6 +66,7 @@ void printArray(int A[], int size)
 	printf("\n"); 
 } 
 
+//Run the Code in main
 int main() 
 { 
 	int arr[] = { 12, 11, 13, 5, 6, 7 }; 
