@@ -7,7 +7,8 @@ void merge(int arr[], int l, int m, int r)
 	int i, j, k; 
 	int n1 = m - l + 1; 
 	int n2 = r - m; 
-  
+  	
+	// Create temp arrays 
 	int L[n1], R[n2]; 
 
 	for (i = 0; i < n1; i++) 
@@ -29,13 +30,11 @@ void merge(int arr[], int l, int m, int r)
 		} 
 		k++; 
 	} 
-
 	while (i < n1) { 
 		arr[k] = L[i]; 
 		i++; 
 		k++; 
 	} 
-
 	while (j < n2) { 
 		arr[k] = R[j]; 
 		j++; 
